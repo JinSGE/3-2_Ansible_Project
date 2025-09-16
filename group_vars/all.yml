@@ -1,0 +1,29 @@
+# DNS
+dns_pkg: bind
+dns_service: named
+dns_fw: dns
+
+# FTP
+ftp_pkg: vsftpd
+ftp_service: vsftpd
+ftp_fw: ftp
+
+# WEB
+web_pkg: httpd
+web_service: httpd
+web_fw: http
+
+# DB
+db_pkg: mariadb-server
+db_service: mariadb
+db_fw: mysql
+
+# MAIL
+mail_pkg: postfix
+mail_service: postfix
+mail_fw: smtp
+
+# NTP
+ntp_pkg: chrony
+ntp_service: chronyd
+ntp_fw: ntp

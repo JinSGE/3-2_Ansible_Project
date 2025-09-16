@@ -1,0 +1,21 @@
+---
+# Server1 (DNS + FTP)
+- name: Configure Server1 (DNS + FTP)
+ hosts: server1
+ roles:
+  - mydns
+  - myftp
+
+# Server2 (WEB + DB)
+- name: Configure Server2 (WEB + DB)
+ hosts: server2
+ roles:
+   - myweb
+   - mydb
+
+# Server3 (MAIL + NTP)
+- name: Configure Server3 (MAIL + NTP)
+ hosts: server3
+ roles:
+  - mymail
+   - myntp
